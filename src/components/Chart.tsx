@@ -1,5 +1,6 @@
 import React from 'react';
 import Plot from 'react-plotly.js';
+import * as Plotly from 'plotly.js';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
