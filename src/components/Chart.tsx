@@ -10,9 +10,11 @@ const useStyles = makeStyles({
   },
 });
 
+  //@ts-ignore
 export default (props: { data: Plotly.Data[] }) => {
   const classes = useStyles();
   const { data } = props;
+  //@ts-ignore
   const tempPresent = data.filter(node => node.yaxis === 'y').length > 1;
 
   if (data.length > 1) {
